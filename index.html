@@ -27,17 +27,21 @@
             />
           </figure>
           <div class="card-body">
-            <h2 class="text-center">triangle</h2>
-            <p class="text-center">Area = 0.5 x b x h</p>
+            <h2 class="text-center text-4xl font-semibold">triangle</h2>
+            <p class="text-center text-3xl">Area = 0.5 x b x h</p>
 
             
             <div class="">
-                <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="" placeholder="b">
+                <input class="w-24 text-2xl p-2 rounded-sm
+                border-yellow-500 focus:ring-2 focus:outline-none focus:ring-purple-500 border-2" type="text" name="" id="triangle-base" placeholder="b">
             <span class="m-4 gap-4">cm</span>
-            <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="" placeholder="h">
-            <span>cm</span>
+            <input class="w-24 text-2xl p-2 rounded-sm border-yellow-400 border-2 focus:ring-2 focus:outline-none focus:ring-red-600" type="text" name="" id="triangle-height" placeholder="h">
+            <span class="m-4 gap-4">cm</span>
             </div>
 
+            <div>
+                <p class="text-2xl">Area: <span id="triangle-area"></span> <span>cm<sup>2</sup></span></p>
+            </div>
 
 
             <div class="card-actions">
@@ -49,15 +53,36 @@
         <div class="card bg-base-100 w-96 shadow-xl">
           <figure>
             <img
-              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+              src="images/rectangle.png"
               alt="Shoes"
             />
           </figure>
           <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-end">
-              <button class="btn btn-primary">Buy Now</button>
+            <h2 class="text-center text-4xl font-semibold">Rectangle</h2>
+            <p class="text-center text-3xl">Area(A) = W x L</p>
+
+
+          <div class="">
+          <input class="w-24 text-2xl p-2 rounded-sm border-2 border-x-indigo-300 focus:ring-2 focus:outline-none focus:ring-green-300" type="text" name="" id="rectangle-w" placeholder="W">
+
+          <span class="m-4 gap-4">cm</span>
+
+          <input class="w-24 text-2xl p-2 rounded-sm border-2 border-indigo-300 focus:ring-2 focus:outline-none focus:ring-fuchsia-950" type="text" name="" id="rectangle-l" placeholder="L">
+
+          <span class="m-4 gap-4">cm</span>
+
+          </div>
+
+
+          
+          <div class="text-2xl">
+            <p>Area: <span id="area-text"></span><span>cm <sup>2</sup></span></p>
+          </div>
+
+
+
+            <div class="card-actions">
+              <button onclick="rectangleArea()" class="btn btn-primary w-full">Calculate</button>
             </div>
           </div>
         </div>
@@ -65,15 +90,34 @@
         <div class="card bg-base-100 w-96 shadow-xl">
           <figure>
             <img
-              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-              alt="Shoes"
+              src="images/parallelogram.png"
+              alt=""
             />
           </figure>
           <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-end">
-              <button class="btn btn-primary">Buy Now</button>
+            <h2 class="text-center text-4xl font-semibold">Parallelogram</h2>
+            <p class="text-center text-3xl">Area = b x h</p>
+            <div class="card-actions">
+
+
+              <div class="">
+                <input class="w-24 text-2xl p-2 rounded-sm border-2 border-x-indigo-300 focus:ring-2 focus:outline-none focus:ring-green-300" type="text" name="" id="rectangle-b" placeholder="b">
+      
+                <span class="m-4 gap-4">cm</span>
+      
+                <input class="w-24 text-2xl p-2 rounded-sm border-2 border-indigo-300 focus:ring-2 focus:outline-none focus:ring-fuchsia-950" type="text" name="" id="rectangle-h" placeholder="h">
+      
+                <span class="m-4 gap-4">cm</span>
+      
+                </div>
+      
+      
+                
+                <div class="text-2xl">
+                  <p>Area: <span id="area-tex"></span><span>cm <sup>2</sup></span></p>
+                </div>
+
+              <button onclick="rectangleAre()" class="btn  btn-primary w-full">Calculate</button>
             </div>
           </div>
         </div>
