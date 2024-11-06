@@ -37,6 +37,7 @@ triangleAreaSpan.innerText=area;
 
 
 
+
 function rectangleArea(){
   const rectangleW = document.getElementById('rectangle-w');
   const rectangleText = rectangleW.value;
@@ -64,25 +65,76 @@ function rectangleArea(){
 
 
 
-function rectangleAre(){
-  const rectangleB = document.getElementById('rectangle-b');
-  const rectangleTex = rectangleB.value;
-  const b = parseFloat(rectangleTex);
-  console.log(b);
 
 
-  const rectangleH = document.getElementById('rectangle-h');
-  const rectangleLTe = rectangleH.value;
-  const h = parseFloat(rectangleLTe);
-  console.log(h);
 
-  const area = b * h ;
-  console.log('the area is:',area)
+// function rectangleAre(){
+//   const rectangleB = document.getElementById('rectangle-b');
+//   const rectangleTex = rectangleB.value;
+//   const b = parseFloat(rectangleTex);
+//   console.log(b);
 
 
-  const areaText = document.getElementById('area-tex');
-  areaText.innerText=area;
+//   const rectangleH = document.getElementById('rectangle-h');
+//   const rectangleLTe = rectangleH.value;
+//   const h = parseFloat(rectangleLTe);
+//   console.log(h);
+
+//   const area = b * h ;
+//   console.log('the area is:',area)
+
+
+//   const areaText = document.getElementById('area-tex');
+//   areaText.innerText=area;
+// }
+
+function calculateParallelogramArea(){
+  const base = getInputValueById('parallelogram-base');
+  console.log('base value', base);
+
+  const height = getInputValueById('parallelogram-height');
+  console.log('height value',height);
+
+  const area = base * height;
+  console.log('the area value is:',area);
+
+  setInnerTextById('parallelogram-area',area);
+}
+function getInputValueById(inputFieldId){
+  const inputField = document.getElementById(inputFieldId);
+  const inputValueText = inputField.value;
+  const inputValue = parseFloat(inputValueText);
+  return inputValue;
+}
+
+function setInnerTextById(elementId, area){
+  const element = document.getElementById(elementId);
+  element.innerText =area;
 }
 
 
 
+
+
+
+
+function rhombusId(){
+  const d = getInputValueById('rhombus-d');
+  console.log('the d value is:',d);
+  const dd = getInputValueById('rhombus-dd');
+  console.log('the dd value is:',dd)
+  const area = 0.5 * d * dd;
+  console.log('the area is:',area);
+  sami('rhombus-area',area);
+}
+
+function getInputValueById(rhombusIs){
+  const rhombus = document.getElementById(rhombusIs);
+  const rhombusText = rhombus.value;
+  const rhombusValue = parseFloat(rhombusText);
+  return rhombusValue;
+}
+function sami(sa,area){
+  const samiSa = document.getElementById(sa);
+  samiSa.innerText=area;
+}

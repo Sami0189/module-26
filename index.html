@@ -19,7 +19,7 @@
       <!-- shape card container -->
       <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <!-- 1 -->
-        <div class="card bg-base-100 w-96 shadow-xl">
+        <div class="card bg-base-100 w-96 shadow-xl my-4 p-6 hover:bg-red-600">
           <figure>
             <img
               src="images/triangle.png"
@@ -50,7 +50,7 @@
           </div>
         </div>
         <!-- 2 -->
-        <div class="card bg-base-100 w-96 shadow-xl">
+        <div class="card bg-base-100 w-96 shadow-xl my-4 p-6 hover:bg-yellow-300">
           <figure>
             <img
               src="images/rectangle.png"
@@ -87,7 +87,7 @@
           </div>
         </div>
         <!-- 3 -->
-        <div class="card bg-base-100 w-96 shadow-xl">
+        <div class="card bg-base-100 w-96 shadow-xl my-4 p-6 hover:bg-lime-400">
           <figure>
             <img
               src="images/parallelogram.png"
@@ -101,11 +101,11 @@
 
 
               <div class="">
-                <input class="w-24 text-2xl p-2 rounded-sm border-2 border-x-indigo-300 focus:ring-2 focus:outline-none focus:ring-green-300" type="text" name="" id="rectangle-b" placeholder="b">
+                <input class="w-24 text-2xl p-2 rounded-sm border-2 border-x-indigo-300 focus:ring-2 focus:outline-none focus:ring-green-300" type="text" name="" id="parallelogram-base" placeholder="b">
       
                 <span class="m-4 gap-4">cm</span>
       
-                <input class="w-24 text-2xl p-2 rounded-sm border-2 border-indigo-300 focus:ring-2 focus:outline-none focus:ring-fuchsia-950" type="text" name="" id="rectangle-h" placeholder="h">
+                <input class="w-24 text-2xl p-2 rounded-sm border-2 border-indigo-300 focus:ring-2 focus:outline-none focus:ring-fuchsia-950" type="text" name="" id="parallelogram-height" placeholder="h">
       
                 <span class="m-4 gap-4">cm</span>
       
@@ -114,10 +114,115 @@
       
                 
                 <div class="text-2xl">
-                  <p>Area: <span id="area-tex"></span><span>cm <sup>2</sup></span></p>
+                  <p>Area: <span id="parallelogram-area"></span><span>cm <sup>2</sup></span></p>
                 </div>
 
-              <button onclick="rectangleAre()" class="btn  btn-primary w-full">Calculate</button>
+              <button onclick="calculateParallelogramArea()" class="btn  btn-primary w-full">Calculate</button>
+            </div>
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="card bg-base-100 w-96 shadow-xl p-6 hover:bg-teal-400">
+          <figure>
+            <img
+              src="images/rhombus.png"
+              alt=""
+            />
+          </figure>
+          <div class="card-body">
+            <h2 class="text-center text-4xl font-semibold">Rhombus</h2>
+            <p class="text-center text-3xl">Area = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
+            <div class="card-actions">
+
+
+              <div class="">
+                <input class="w-24 text-2xl p-2 rounded-sm border-2 border-x-indigo-300 focus:ring-2 focus:outline-none focus:ring-green-300" type="text" name="" id="rhombus-d" placeholder="d1">
+      
+                <span class="m-4 gap-4">cm</span>
+      
+                <input class="w-24 text-2xl p-2 rounded-sm border-2 border-indigo-300 focus:ring-2 focus:outline-none focus:ring-fuchsia-950" type="text" name="" id="rhombus-dd" placeholder="d2">
+      
+                <span class="m-4 gap-4">cm</span>
+      
+                </div>
+      
+      
+                
+                <div class="text-2xl">
+                  <p>Area: <span id="rhombus-area"></span><span>cm <sup>2</sup></span></p>
+                </div>
+
+              <button onclick="rhombusId()" class="btn  btn-primary w-full">Calculate</button>
+            </div>
+          </div>
+        </div>
+        <!-- 5 -->
+        <div class="card bg-base-100 w-96 shadow-xl p-6 hover:bg-sky-600">
+          <figure>
+            <img
+              src="images/parallelogram.png"
+              alt=""
+            />
+          </figure>
+          <div class="card-body">
+            <h2 class="text-center text-4xl font-semibold">Parallelogram</h2>
+            <p class="text-center text-3xl">Area = b x h</p>
+            <div class="card-actions">
+
+
+              <div class="">
+                <input class="w-24 text-2xl p-2 rounded-sm border-2 border-x-indigo-300 focus:ring-2 focus:outline-none focus:ring-green-300" type="text" name="" id="parallelogram-base" placeholder="b">
+      
+                <span class="m-4 gap-4">cm</span>
+      
+                <input class="w-24 text-2xl p-2 rounded-sm border-2 border-indigo-300 focus:ring-2 focus:outline-none focus:ring-fuchsia-950" type="text" name="" id="parallelogram-height" placeholder="h">
+      
+                <span class="m-4 gap-4">cm</span>
+      
+                </div>
+      
+      
+                
+                <div class="text-2xl">
+                  <p>Area: <span id="parallelogram-area"></span><span>cm <sup>2</sup></span></p>
+                </div>
+
+              <button onclick="calculateParallelogramArea()" class="btn  btn-primary w-full">Calculate</button>
+            </div>
+          </div>
+        </div>
+        <!-- 6 -->
+        <div class="card bg-base-100 w-96 shadow-xl p-6 hover:bg-fuchsia-600">
+          <figure>
+            <img
+              src="images/parallelogram.png"
+              alt=""
+            />
+          </figure>
+          <div class="card-body">
+            <h2 class="text-center text-4xl font-semibold">Parallelogram</h2>
+            <p class="text-center text-3xl">Area = b x h</p>
+            <div class="card-actions">
+
+
+              <div class="">
+                <input class="w-24 text-2xl p-2 rounded-sm border-2 border-x-indigo-300 focus:ring-2 focus:outline-none focus:ring-green-300" type="text" name="" id="parallelogram-base" placeholder="b">
+      
+                <span class="m-4 gap-4">cm</span>
+      
+                <input class="w-24 text-2xl p-2 rounded-sm border-2 border-indigo-300 focus:ring-2 focus:outline-none focus:ring-fuchsia-950" type="text" name="" id="parallelogram-height" placeholder="h">
+      
+                <span class="m-4 gap-4">cm</span>
+      
+                </div>
+      
+      
+                
+                <div class="text-2xl">
+                  <p>Area: <span id="parallelogram-area"></span><span>cm <sup>2</sup></span></p>
+                </div>
+
+              <button onclick="calculateParallelogramArea()" class="btn  btn-primary w-full">Calculate</button>
             </div>
           </div>
         </div>
